@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Crear Cuenta</h2>
+        <form id="registroformulario" class="registro-formulario">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span class="error-message" id="nombreError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="passworderror"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmpassword">Confirmar Contraseña</label>
+                <input type="confirmpassword" id="confirmpassword" name="confirmPassword" required>
+                <span class="error-message" id="confirmpassworderror"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <button type="submit" class="btn-registrar">Registrarse</button>
+        </form>
+
+        <div id="mensajeexito" class="mensaje-exito" style="display: none;">
+            ¡Registro exitoso! Bienvenido/a
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
